@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Entity.Models.ProductModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Search</h1>
+<h4>Chercher un produit</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="SearchResults">
+            <div class="form-group">
+                <label for="searchData" class="control-label"></label>
+                <input name="searchData" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Chercher" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">retour</a>
+</div>
